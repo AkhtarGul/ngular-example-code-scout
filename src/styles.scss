@@ -1,1 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~flexboxgrid-sass/flexboxgrid';
+
+$flexboxgrid-grid-columns: 12;
+$flexboxgrid-gutter-width: 0;
+$flexboxgrid-outer-margin: 0;
+
+
+
+html, body {
+  width: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    min-width: 130px;
+    width: 100%;
+    padding: 0 33px;
+    height: 42px;
+    line-height: 40px;
+    border-radius: 42px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f6f6f6;
+    border: 2px solid transparent;
+    cursor: pointer;
+    outline: none;
+    color: #333435;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .25s ease-out, box-shadow .25s ease;
+
+
+  &--primary {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #ffffff;
+      border: 2px solid #000000;
+      color: #000000
+    }
+  }
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}

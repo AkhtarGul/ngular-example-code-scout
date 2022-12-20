@@ -1,10 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { HireFormComponent } from './hire-form/hire-form.component';
+import { ProfileViewComponent } from './profile-view/profile-view.component';
+const routes: Routes = [
+  {
+    path:'',redirectTo:'/home',pathMatch:'full'
+  },
+  {
+    path:'home',component:ProfileViewComponent
+  },
+  {
+    path:'hire',component:HireFormComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+
+exports: [RouterModule]
 })
 export class AppRoutingModule { }

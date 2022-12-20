@@ -1,0 +1,15 @@
+.toolbar {
+  height: 50px;
+  margin-bottom: 20x;
+
+  &_title {
+    text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.page-content {
+  background-color: #f6f6f6;
+}
